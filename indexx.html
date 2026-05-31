@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raphaël Guguin — Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR STICKY
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">RG<span class="nav-dot">.</span></div>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#presentation" onclick="closeMenu()">Présentation</a></li>
+      <li><a href="#formation"    onclick="closeMenu()">Formation</a></li>
+      <li><a href="#competences"  onclick="closeMenu()">Compétences</a></li>
+      <li><a href="#projets"      onclick="closeMenu()">Projets</a></li>
+      <li><a href="#contact"      onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO / PRÉSENTATION
+  ══════════════════════════════════════ -->
+  <section class="hero" id="presentation">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <p class="hero-eyebrow">Bonjour, je suis</p>
+        <h1 class="hero-name">
+          Raphaël<br />
+          <span class="hero-name-accent">Guguin</span>
+        </h1>
+        <p class="hero-desc">
+          Étudiant passionné en première année de
+          <a class="lien-but"
+             href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf"
+             target="_blank" rel="noopener">BUT Informatique</a>
+          à Lannion, je suis à la recherche d'un stage afin de mettre mes compétences
+          en pratique et de découvrir le monde professionnel du numérique.
+          <!-- ✏️ Reformule cette phrase selon tes propres mots -->
+        </p>
+        <div class="hero-actions">
+          <a href="#competences" class="btn-primary">Mes compétences</a>
+          <a href="#contact"     class="btn-ghost">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-area">
+        <div class="hero-photo-ring">
+          <!-- ✏️ Remplace src="ta-photo.jpg" par le chemin de ta photo -->
+          <img src="ta-photo.jpg" alt="Photo de Raphaël Guguin" class="hero-photo" />
+        </div>
+        <div class="hero-photo-glow"></div>
+      </div>
+
+    </div>
+    <div class="hero-scroll">↓ scroll</div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FORMATION
+  ══════════════════════════════════════ -->
+  <section class="section" id="formation">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">01</span> Formation</h2>
+
+      <div class="timeline">
+
+        <!-- Entrée actuelle -->
+        <div class="tl-item tl-current fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-badge">En cours</span>
+            <div class="tl-date">2025 — 2028</div>
+            <h3 class="tl-title">
+              Bachelor Universitaire de Technologie — Informatique
+            </h3>
+            <p class="tl-school">
+              <a href="https://iut-lannion.univ-rennes.fr/" target="_blank" rel="noopener" class="lien-iut">
+                L'IUT de Lannion
+              </a>
+              — Université de Rennes
+            </p>
+            <p class="tl-detail">
+              <!-- ✏️ Décris ici ta formation : parcours, spécialités, projets marquants… -->
+              Formation en trois ans axée sur le développement logiciel, les réseaux,
+              les bases de données et la conduite de projets informatiques.
+            </p>
+          </div>
+        </div>
+
+        <!-- Entrée précédente -->
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-badge tl-badge-past">Diplômé</span>
+            <div class="tl-date">Jusqu'en 2025</div>
+            <h3 class="tl-title">Baccalauréat Général</h3>
+            <p class="tl-school">Lycée de l'Iroise — Brest</p>
+            <p class="tl-detail">
+              Spécialités : <strong>Mathématiques</strong> &amp; <strong>Physique-Chimie</strong><br />
+              Option : Mathématiques expertes<br />
+              Spécialité abandonnée en terminale : Sciences Économiques et Sociales (SES)
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COMPÉTENCES BUT (6)
+  ══════════════════════════════════════ -->
+  <section class="section section-alt" id="competences">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">02</span> Compétences BUT Informatique</h2>
+      <p class="section-lead">
+        Les 6 compétences nationales du BUT Informatique — illustrées par mes réalisations.
+        <!-- ✏️ Adapte si tu veux -->
+      </p>
+
+      <div class="comp-grid" id="comp-grid">
+
+        <!-- ── Compétence 1 ── -->
+        <div class="comp-block" data-comp="1">
+          <div class="comp-card">
+            <span class="comp-num">01</span>
+            <h3 class="comp-name">
+              <!-- ✏️ Nom officiel de la compétence 1 -->
+              Compétence 1 — [Réaliser un développement d'application]
+            </h3>
+            <p class="comp-desc">
+              <!-- ✏️ Explique comment tu as acquis cette compétence, tes apprentissages, tes traces -->
+              Description de la compétence 1 et de ton niveau d'acquisition.
+            </p>
+            <button class="btn-comp-toggle" onclick="toggleComp(1)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-1">
+            <div class="cp-list">
+              <!-- ✏️ Duplique .cp-item autant de fois que nécessaire -->
+              <div class="cp-item" onclick="goToProject('projet-1')">
+                <div class="cp-img">
+                  <!-- ✏️ <img src="img/proj1.jpg" alt="Projet 1" /> -->
+                  <span class="cp-img-placeholder">📁</span>
+                </div>
+                <p class="cp-name"><!-- ✏️ Nom du projet --></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 2 ── -->
+        <div class="comp-block" data-comp="2">
+          <div class="comp-card">
+            <span class="comp-num">02</span>
+            <h3 class="comp-name">Compétence 2 — [Optimiser des applications]</h3>
+            <p class="comp-desc">Description de la compétence 2 et de ton niveau d'acquisition.</p>
+            <button class="btn-comp-toggle" onclick="toggleComp(2)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-2">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-2')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name"><!-- ✏️ Nom du projet --></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 3 ── -->
+        <div class="comp-block" data-comp="3">
+          <div class="comp-card">
+            <span class="comp-num">03</span>
+            <h3 class="comp-name">Compétence 3 — [Administrer des systèmes informatiques]</h3>
+            <p class="comp-desc">Description de la compétence 3 et de ton niveau d'acquisition.</p>
+            <button class="btn-comp-toggle" onclick="toggleComp(3)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-3">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-3')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name"><!-- ✏️ Nom du projet --></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 4 ── -->
+        <div class="comp-block" data-comp="4">
+          <div class="comp-card">
+            <span class="comp-num">04</span>
+            <h3 class="comp-name">Compétence 4 — [Gérer des données]</h3>
+            <p class="comp-desc">Description de la compétence 4 et de ton niveau d'acquisition.</p>
+            <button class="btn-comp-toggle" onclick="toggleComp(4)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-4">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-4')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name"><!-- ✏️ Nom du projet --></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 5 ── -->
+        <div class="comp-block" data-comp="5">
+          <div class="comp-card">
+            <span class="comp-num">05</span>
+            <h3 class="comp-name">Compétence 5 — [Conduire un projet]</h3>
+            <p class="comp-desc">Description de la compétence 5 et de ton niveau d'acquisition.</p>
+            <button class="btn-comp-toggle" onclick="toggleComp(5)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-5">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-5')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name"><!-- ✏️ Nom du projet --></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 6 ── -->
+        <div class="comp-block" data-comp="6">
+          <div class="comp-card">
+            <span class="comp-num">06</span>
+            <h3 class="comp-name">Compétence 6 — [Travailler dans une équipe informatique]</h3>
+            <p class="comp-desc">Description de la compétence 6 et de ton niveau d'acquisition.</p>
+            <button class="btn-comp-toggle" onclick="toggleComp(6)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-6">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-6')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name"><!-- ✏️ Nom du projet --></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /comp-grid -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TOUS MES PROJETS
+  ══════════════════════════════════════ -->
+  <section class="section" id="projets">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">03</span> Mes projets</h2>
+
+      <div class="proj-grid" id="proj-grid">
+
+        <!-- Projets 1-3 toujours visibles -->
+        <article class="proj-card fade-in" id="projet-1">
+          <div class="proj-img">
+            <!-- ✏️ <img src="img/proj1.jpg" alt="Projet 1" /> -->
+            <span class="proj-img-ph">01</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 1 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte du projet 1 --></p>
+          </div>
+        </article>
+
+        <article class="proj-card fade-in" id="projet-2">
+          <div class="proj-img"><span class="proj-img-ph">02</span></div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 2 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte --></p>
+          </div>
+        </article>
+
+        <article class="proj-card fade-in" id="projet-3">
+          <div class="proj-img"><span class="proj-img-ph">03</span></div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 3 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte --></p>
+          </div>
+        </article>
+
+        <!-- Projets 4-8 masqués -->
+        <article class="proj-card proj-hidden fade-in" id="projet-4">
+          <div class="proj-img"><span class="proj-img-ph">04</span></div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 4 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte --></p>
+          </div>
+        </article>
+
+        <article class="proj-card proj-hidden fade-in" id="projet-5">
+          <div class="proj-img"><span class="proj-img-ph">05</span></div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 5 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte --></p>
+          </div>
+        </article>
+
+        <article class="proj-card proj-hidden fade-in" id="projet-6">
+          <div class="proj-img"><span class="proj-img-ph">06</span></div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 6 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte --></p>
+          </div>
+        </article>
+
+        <article class="proj-card proj-hidden fade-in" id="projet-7">
+          <div class="proj-img"><span class="proj-img-ph">07</span></div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 7 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte --></p>
+          </div>
+        </article>
+
+        <article class="proj-card proj-hidden fade-in" id="projet-8">
+          <div class="proj-img"><span class="proj-img-ph">08</span></div>
+          <div class="proj-body">
+            <h4 class="proj-name"><!-- ✏️ Nom du Projet 8 --></h4>
+            <p class="proj-desc"><!-- ✏️ Description courte --></p>
+          </div>
+        </article>
+
+      </div><!-- /proj-grid -->
+
+      <div class="proj-toggle-wrap">
+        <button class="btn-show-more" id="btn-projs" onclick="toggleAllProjects()">
+          Afficher plus de projets <span class="btn-arr">▾</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COMPÉTENCES TECHNIQUES
+  ══════════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">04</span> Compétences techniques</h2>
+
+      <div class="skills-grid">
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">⌨️</span> Développement &amp; Programmation</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">C</span></li>
+            <li><span class="tag">Python</span></li>
+            <li><span class="tag">Java</span></li>
+            <li><span class="tag">PHP</span></li>
+            <li><span class="tag">Bash</span></li>
+            <li><span class="tag">JavaFX / FXML</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🌐</span> Développement Web</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">HTML</span></li>
+            <li><span class="tag">CSS</span></li>
+            <li><span class="tag">Bootstrap</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🗄️</span> Bases de données</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">PostgreSQL</span></li>
+            <li><span class="tag">MySQL</span></li>
+            <li><span class="tag">SQLite</span></li>
+            <li><span class="tag">Tutorial D</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🖥️</span> Système &amp; Environnement</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">Linux</span></li>
+            <li><span class="tag">Docker</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🛠️</span> Outils de travail</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">GitHub</span></li>
+            <li><span class="tag">GitLab</span></li>
+            <li><span class="tag">Visual Studio Code</span></li>
+            <li><span class="tag">Eclipse</span></li>
+            <li><span class="tag">SceneBuilder</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER / CONTACT
+  ══════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <h2 class="footer-title">Contact</h2>
+      <p class="footer-intro">
+        <!-- ✏️ Adapte ce texte -->
+        Disponible pour un stage — n'hésitez pas à me contacter !
+      </p>
+
+      <div class="contact-grid">
+
+        <a href="mailto:votre.email@example.com" class="contact-card">
+          <!-- ✏️ Remplace par ton vrai email -->
+          <span class="contact-icon">✉</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">votre.email@example.com</span>
+        </a>
+
+        <a href="tel:+33600000000" class="contact-card">
+          <!-- ✏️ Remplace par ton vrai numéro -->
+          <span class="contact-icon">📞</span>
+          <span class="contact-label">Téléphone</span>
+          <span class="contact-value">+33 6 00 00 00 00</span>
+        </a>
+
+        <a href="CV_Raphael_Guguin.pdf" download class="contact-card">
+          <!-- ✏️ Assure-toi que le fichier CV_Raphael_Guguin.pdf est au même niveau -->
+          <span class="contact-icon">📄</span>
+          <span class="contact-label">Curriculum Vitæ</span>
+          <span class="contact-value">Télécharger mon CV</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener" class="contact-card">
+          <!-- ✏️ Remplace par ton vrai profil LinkedIn -->
+          <span class="contact-icon">in</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Raphaël Guguin</span>
+        </a>
+
+      </div>
+
+      <p class="footer-copy">© 2025 Raphaël Guguin · BUT Informatique · IUT de Lannion</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════ -->
+  <script>
+    /* ── Navbar scroll ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('nav-scrolled', window.scrollY > 50);
+    });
+
+    /* ── Burger menu mobile ── */
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
+      document.getElementById('nav-burger').classList.toggle('active');
+    }
+    function closeMenu() {
+      document.getElementById('nav-links').classList.remove('open');
+      document.getElementById('nav-burger').classList.remove('active');
+    }
+
+    /* ── Compétences : toggle projets avec réorganisation de la grille ──
+       Logique :
+       - La compétence ouverte passe en pleine largeur (grid-column: 1 / -1)
+       - Les projets s'insèrent juste en dessous dans le flux CSS grid
+       - Si une compétence de droite était "après" elle repasse sous les projets
+    ── */
+    let openComp = null;
+
+    function toggleComp(n) {
+      const grid   = document.getElementById('comp-grid');
+      const block  = grid.querySelector(`.comp-block[data-comp="${n}"]`);
+      const panel  = document.getElementById(`cp-${n}`);
+      const btn    = block.querySelector('.btn-comp-toggle');
+
+      /* Ferme l'éventuel ouvert */
+      if (openComp !== null && openComp !== n) {
+        const prevBlock = grid.querySelector(`.comp-block[data-comp="${openComp}"]`);
+        const prevPanel = document.getElementById(`cp-${openComp}`);
+        prevPanel.classList.remove('cp-open');
+        prevBlock.classList.remove('comp-expanded');
+        const prevBtn = prevBlock.querySelector('.btn-comp-toggle');
+        prevBtn.querySelector('.toggle-txt').textContent = 'Afficher les projets';
+        prevBtn.querySelector('.toggle-arr').textContent = '▾';
+      }
+
+      const isOpen = panel.classList.contains('cp-open');
+
+      if (isOpen) {
+        panel.classList.remove('cp-open');
+        block.classList.remove('comp-expanded');
+        btn.querySelector('.toggle-txt').textContent = 'Afficher les projets';
+        btn.querySelector('.toggle-arr').textContent = '▾';
+        openComp = null;
+      } else {
+        block.classList.add('comp-expanded');
+        panel.classList.add('cp-open');
+        btn.querySelector('.toggle-txt').textContent = 'Masquer les projets';
+        btn.querySelector('.toggle-arr').textContent = '▴';
+        openComp = n;
+        /* Scroll doux vers le bloc */
+        setTimeout(() => block.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+      }
+    }
+
+    /* ── Navigation vers un projet depuis compétences ── */
+    function goToProject(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      /* Rend visible si caché */
+      el.style.display = 'flex';
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('proj-highlight');
+      setTimeout(() => el.classList.remove('proj-highlight'), 2000);
+    }
+
+    /* ── Projets : afficher plus ── */
+    let projVisible = false;
+    function toggleAllProjects() {
+      projVisible = !projVisible;
+      document.querySelectorAll('.proj-hidden').forEach(el => {
+        el.style.display = projVisible ? 'flex' : 'none';
+      });
+      const btn = document.getElementById('btn-projs');
+      btn.innerHTML = projVisible
+        ? 'Afficher moins <span class="btn-arr">▴</span>'
+        : 'Afficher plus de projets <span class="btn-arr">▾</span>';
+    }
+
+    /* ── Intersection Observer (animations entrée) ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.fade-in, .tl-item, .comp-block, .sk-cat').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>

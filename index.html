@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raphaël Guguin — Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR STICKY
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#presentation" onclick="closeMenu()">Présentation</a></li>
+      <li><a href="#formation"    onclick="closeMenu()">Formation</a></li>
+      <li><a href="#competences"  onclick="closeMenu()">Compétences</a></li>
+      <li><a href="#projets"      onclick="closeMenu()">Projets</a></li>
+      <li><a href="#contact"      onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       raph / PRÉSENTATION
+  ══════════════════════════════════════ -->
+  <section class="raph" id="presentation">
+    <div class="raph-inner">
+
+      <div class="raph-text">
+        <p class="raph-eyebrow">Bonjour, je suis</p>
+        <h1 class="raph-name">
+          <span class="raph-name-accent">Raphaël Guguin</span>
+        </h1>
+        <p class="raph-desc">
+          Étudiant de première année de
+          <a class="lien-but"
+             href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf"
+             target="_blank" rel="noopener">BUT Informatique</a>
+          à Lannion, je suis à la recherche d'un stage afin de mettre mes compétences
+          en pratique et de découvrir le monde professionnel du numérique.
+          
+        </p>
+        <div class="raph-actions">
+          <a href="#competences" class="btn-primary">Mes compétences</a>
+          <a href="#contact"     class="btn-ghost">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="raph-photo-area">
+        <div class="raph-photo-ring">
+          
+          <img src="images/photoRaphael.jpg" alt="Photo de Raphaël Guguin" class="raph-photo" />
+        </div>
+        <div class="raph-photo-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FORMATION
+  ══════════════════════════════════════ -->
+  <section class="section" id="formation">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">01</span> Formation</h2>
+
+      <div class="timeline">
+
+        
+        <div class="tl-item tl-current fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-badge">En cours</span>
+            <div class="tl-date">2025 — 2028</div>
+            <h3 class="tl-title">
+              Bachelor Universitaire de Technologie — Informatique
+            </h3>
+            <p class="tl-school">
+              <a href="https://iut-lannion.univ-rennes.fr/" target="_blank" rel="noopener" class="lien-iut">
+                L'IUT de Lannion
+              </a>
+              — Université de Rennes
+            </p>
+            <p class="tl-detail">
+              
+              Formation en trois ans axée sur le développement logiciel, le développement d'applications,
+              les réseaux, les bases de données et la conduite de projets informatiques.
+            </p>
+          </div>
+        </div>
+
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-badge tl-badge-past">Diplômé</span>
+            <div class="tl-date">Jusqu'en 2025</div>
+            <h3 class="tl-title">Baccalauréat Général</h3>
+            <p class="tl-school">Lycée de l'Iroise — Brest</p>
+            <p class="tl-detail">
+              Spécialités : <strong>Mathématiques</strong> &amp; <strong>Physique-Chimie</strong><br />
+              Option : Mathématiques expertes<br />
+              Spécialité abandonnée en terminale : Sciences Économiques et Sociales (SES)
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COMPÉTENCES BUT (6)
+  ══════════════════════════════════════ -->
+  <section class="section section-alt" id="competences">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">02</span> Compétences BUT Informatique</h2>
+      <p class="section-lead">
+        Les 6 compétences nationales du BUT Informatique.
+       
+      </p>
+
+      <div class="comp-grid" id="comp-grid">
+
+        <!-- ── Compétence 1 ── -->
+        <div class="comp-block" data-comp="1">
+          <div class="comp-card">
+            <span class="comp-num">01</span>
+            <h3 class="comp-name">Compétence 1 — [Réaliser un développement d'application]</h3>
+            <button class="btn-comp-toggle" onclick="toggleComp(1)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-1">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-1')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Sokoban</p>
+              </div>
+              <div class="cp-item" onclick="goToProject('projet-4')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Site Web</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 2 ── -->
+        <div class="comp-block" data-comp="2">
+          <div class="comp-card">
+            <span class="comp-num">02</span>
+            <h3 class="comp-name">Compétence 2 — [Optimiser des applications]</h3>
+            <button class="btn-comp-toggle" onclick="toggleComp(2)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-2">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-2')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Problème du cavalier</p>
+              </div>
+              <div class="cp-item" onclick="goToProject('projet-3')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Picross</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 3 ── -->
+        <div class="comp-block" data-comp="3">
+          <div class="comp-card">
+            <span class="comp-num">03</span>
+            <h3 class="comp-name">Compétence 3 — [Administrer des systèmes informatiques]</h3>
+            <button class="btn-comp-toggle" onclick="toggleComp(3)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-3">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-6')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Installation d'un poste de développement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 4 ── -->
+        <div class="comp-block" data-comp="4">
+          <div class="comp-card">
+            <span class="comp-num">04</span>
+            <h3 class="comp-name">Compétence 4 — [Gérer des données]</h3>
+            <button class="btn-comp-toggle" onclick="toggleComp(4)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-4">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-7')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Base de Données Parcoursup 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 5 ── -->
+        <div class="comp-block" data-comp="5">
+          <div class="comp-card">
+            <span class="comp-num">05</span>
+            <h3 class="comp-name">Compétence 5 — [Conduire un projet]</h3>
+            <button class="btn-comp-toggle" onclick="toggleComp(5)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-5">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-5')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Gestion de Projet (boulangerie)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Compétence 6 ── -->
+        <div class="comp-block" data-comp="6">
+          <div class="comp-card">
+            <span class="comp-num">06</span>
+            <h3 class="comp-name">Compétence 6 — [Travailler dans une équipe informatique]</h3>
+            <button class="btn-comp-toggle" onclick="toggleComp(6)">
+              <span class="toggle-txt">Afficher les projets</span>
+              <span class="toggle-arr">▾</span>
+            </button>
+          </div>
+          <div class="comp-projects" id="cp-6">
+            <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-4')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Site Web</p>
+              </div>
+              <div class="cp-item" onclick="goToProject('projet-5')">
+                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <p class="cp-name">Gestion de Projet (boulangerie)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TOUS MES PROJETS
+  ══════════════════════════════════════ -->
+  <section class="section" id="projets">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">03</span> Mes projets</h2>
+
+      <div class="proj-grid" id="proj-grid">
+
+        
+        <article class="proj-card fade-in" id="projet-1">
+          <div class="proj-img">
+            <img src="images/Sokoban.png" alt="Projet 1" /> 
+            <span class="proj-img-ph">01</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name">Sokoban / Projet BUT</h4>
+            <p class="proj-desc">Jeu de logique dans lequel le joueur doit pousser des caisses sur des cibles, réalisé en langage C, afficher sur le terminal.</p>
+          </div>
+        </article>
+
+        <article class="proj-card fade-in" id="projet-2">
+          <div class="proj-img">
+            <img src="images/Cavalier.png" alt="Projet 2" />
+            <span class="proj-img-ph">02</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name">Problème du cavalier / Projet BUT</h4>
+            <p class="proj-desc">Problème de parcours du cavalier sur un échiquier 8 X 8 devant passé par toutes les cases une unique fois, résolu par un algorithmes de recherche en profondeur pour optimiser le programme, reealisé en python.</p>
+          </div>
+        </article>
+
+        <article class="proj-card fade-in" id="projet-3">
+          <div class="proj-img">
+            <img src="images/picross-plein.png" alt="Projet 3" />
+            <span class="proj-img-ph">03</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name">Picross / Projet BUT</h4>
+            <p class="proj-desc">Jeu de logique dans lequel le joueur doit remplir une grille de cases en fonction des indices donnés, réalisé en python, dans le but d'optimiser un programme.</p>
+          </div>
+        </article>
+
+        <!-- Projets 4-8 masqués -->
+        <article class="proj-card proj-hidden fade-in" id="projet-4">
+          <div class="proj-img">
+            <img src="images/site-web.png" alt="Projet 4" />
+            <span class="proj-img-ph">04</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name">Site Web / Projet BUT</h4>
+            <p class="proj-desc">Conception et développement d'un site web responsive, réalisé en HTML, CSS pour un site de tourisme, pour le Royaume-Unis.</p>
+          </div>
+        </article>
+
+        <article class="proj-card proj-hidden fade-in" id="projet-5">
+          <div class="proj-img">
+            <img src="images/gestion-de-projet.png" alt="Projet 5" />
+            <span class="proj-img-ph">05</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name">Gestion de Projet / Projet BUT</h4>
+            <p class="proj-desc">Imagination de toutes les étapes, en passant par la planification des fonctionnalités au maquettage, pour la conception d'une application, afin d'aider une boulangerie à optimiser sa gestion de stock et de vente.</p>
+          </div>
+        </article>
+
+        <article class="proj-card proj-hidden fade-in" id="projet-6">
+          <div class="proj-img">
+            <img src="images/auto-conversion.png" alt="Projet 6" />
+            <span class="proj-img-ph">06</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name">Installation d'un poste pour le développement / Projet BUT</h4>
+            <p class="proj-desc">Installation et configuration d'un poste de développement, réalisé en bash et PHP, pour faciliter la conversion de différents types de fichiers reçus, pour la création d'un site web.</p>
+          </div>
+        </article>
+
+        <article class="proj-card proj-hidden fade-in" id="projet-7">
+          <div class="proj-img">
+            <img src="images/Base-de-donne.png" alt="Projet 7" />
+            <span class="proj-img-ph">07</span>
+          </div>
+          <div class="proj-body">
+            <h4 class="proj-name">Base de Données de parcoursup 2022/ Projet BUT</h4>
+            <p class="proj-desc">Mise en place d'une base de données pour stocker et gérer les informations des candidats sur parcoursup 2022, sur SQLWorbench.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="proj-toggle-wrap">
+        <button class="btn-show-more" id="btn-projs" onclick="toggleAllProjects()">
+          Afficher plus de projets <span class="btn-arr">▾</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COMPÉTENCES TECHNIQUES
+  ══════════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="title-num">04</span> Compétences techniques</h2>
+
+      <div class="skills-grid">
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">⌨️</span> Développement &amp; Programmation</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">C</span></li>
+            <li><span class="tag">Python</span></li>
+            <li><span class="tag">Java</span></li>
+            <li><span class="tag">PHP</span></li>
+            <li><span class="tag">Bash</span></li>
+            <li><span class="tag">JavaFX / FXML</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🌐</span> Développement Web</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">HTML</span></li>
+            <li><span class="tag">CSS</span></li>
+            <li><span class="tag">Bootstrap</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🗄️</span> Bases de données</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">PostgreSQL</span></li>
+            <li><span class="tag">MySQL</span></li>
+            <li><span class="tag">SQLite</span></li>
+            <li><span class="tag">Tutorial D</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🖥️</span> Système &amp; Environnement</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">Linux</span></li>
+            <li><span class="tag">Docker</span></li>
+          </ul>
+        </div>
+
+        <div class="sk-cat fade-in">
+          <h3 class="sk-cat-title"><span class="sk-ico">🛠️</span> Outils de travail</h3>
+          <ul class="sk-tags">
+            <li><span class="tag">GitHub</span></li>
+            <li><span class="tag">GitLab</span></li>
+            <li><span class="tag">Visual Studio Code</span></li>
+            <li><span class="tag">Eclipse</span></li>
+            <li><span class="tag">SceneBuilder</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER / CONTACT
+  ══════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <h2 class="footer-title">Contact</h2>
+      <p class="footer-intro">
+        
+        Disponible pour un stage — n'hésitez pas à me contacter !
+      </p>
+
+      <div class="contact-grid">
+
+        <a href="mailto:guguin.raphael@gmail.com" class="contact-card">
+          
+          <span class="contact-label">Email</span>
+          <span class="contact-value">guguin.raphael@gmail.com</span>
+        </a>
+
+        <a href="tel:+330769298661" class="contact-card">
+          
+          <span class="contact-label">Téléphone</span>
+          <span class="contact-value">+33 07 69 29 86 61</span>
+        </a>
+
+        <a href="CV_Raphael_Guguin.pdf" download class="contact-card">
+          
+          <span class="contact-label">Curriculum Vitæ</span>
+          <span class="contact-value">Télécharger mon CV</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rapha%C3%ABl-guguin-73095a3b4/" target="_blank" rel="noopener" class="contact-card">
+          
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Raphaël Guguin</span>
+        </a>
+
+        <a href="https://github.com/RGug" target="_blank" rel="noopener" class="contact-card">
+          
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">RGug</span>
+        </a>
+
+      </div>
+
+      <p class="footer-copy">© 2026 Raphaël Guguin - BUT Informatique - IUT de Lannion</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════ -->
+  <script>
+    /* ── Navbar scroll ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('nav-scrolled', window.scrollY > 50);
+    });
+
+    /* ── Burger menu mobile ── */
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
+      document.getElementById('nav-burger').classList.toggle('active');
+    }
+    function closeMenu() {
+      document.getElementById('nav-links').classList.remove('open');
+      document.getElementById('nav-burger').classList.remove('active');
+    }
+
+    /* ── Compétences : toggle projets avec réorganisation de la grille ──
+       Logique :
+       - La compétence ouverte passe en pleine largeur (grid-column: 1 / -1)
+       - Les projets s'insèrent juste en dessous dans le flux CSS grid
+       - Si une compétence de droite était "après" elle repasse sous les projets
+    ── */
+    let openComp = null;
+
+    function toggleComp(n) {
+      const grid   = document.getElementById('comp-grid');
+      const block  = grid.querySelector(`.comp-block[data-comp="${n}"]`);
+      const panel  = document.getElementById(`cp-${n}`);
+      const btn    = block.querySelector('.btn-comp-toggle');
+
+      /* Ferme l'éventuel ouvert */
+      if (openComp !== null && openComp !== n) {
+        const prevBlock = grid.querySelector(`.comp-block[data-comp="${openComp}"]`);
+        const prevPanel = document.getElementById(`cp-${openComp}`);
+        prevPanel.classList.remove('cp-open');
+        prevBlock.classList.remove('comp-expanded');
+        const prevBtn = prevBlock.querySelector('.btn-comp-toggle');
+        prevBtn.querySelector('.toggle-txt').textContent = 'Afficher les projets';
+        prevBtn.querySelector('.toggle-arr').textContent = '▾';
+      }
+
+      const isOpen = panel.classList.contains('cp-open');
+
+      if (isOpen) {
+        panel.classList.remove('cp-open');
+        block.classList.remove('comp-expanded');
+        btn.querySelector('.toggle-txt').textContent = 'Afficher les projets';
+        btn.querySelector('.toggle-arr').textContent = '▾';
+        openComp = null;
+      } else {
+        block.classList.add('comp-expanded');
+        panel.classList.add('cp-open');
+        btn.querySelector('.toggle-txt').textContent = 'Masquer les projets';
+        btn.querySelector('.toggle-arr').textContent = '▴';
+        openComp = n;
+        /* Scroll doux vers le bloc */
+        setTimeout(() => block.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+      }
+    }
+
+    /* ── Navigation vers un projet depuis compétences ── */
+    function goToProject(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      /* Rend visible si caché */
+      el.style.display = 'flex';
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('proj-highlight');
+      setTimeout(() => el.classList.remove('proj-highlight'), 2000);
+    }
+
+    /* ── Projets : afficher plus ── */
+    let projVisible = false;
+    function toggleAllProjects() {
+      projVisible = !projVisible;
+      document.querySelectorAll('.proj-hidden').forEach(el => {
+        el.style.display = projVisible ? 'flex' : 'none';
+      });
+      const btn = document.getElementById('btn-projs');
+      btn.innerHTML = projVisible
+        ? 'Afficher moins <span class="btn-arr">▴</span>'
+        : 'Afficher plus de projets <span class="btn-arr">▾</span>';
+    }
+
+    /* ── Intersection Observer (animations entrée) ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.fade-in, .tl-item, .comp-block, .sk-cat').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
