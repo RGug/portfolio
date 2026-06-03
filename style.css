@@ -1,8 +1,8 @@
-/* ============================================================
+/*
    style.css — Portfolio Raphaël Guguin
    Charte : Noir → Vert foncé · Fond radial vert centré
    Polices : Oxanium (titres) + Nunito (corps)
-   ============================================================ */
+*/
 
 /* ── Variables ── */
 :root {
@@ -41,7 +41,6 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   background-color: var(--bg);
-  /* Fond dégradé radial : vert qui s'éclaire au centre, s'assombrit sur les côtés */
   background-image:
     radial-gradient(ellipse 70% 60% at 50% 30%,
       var(--bg-glow)   0%,
@@ -65,9 +64,9 @@ strong { font-weight: 600; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
 
-/* ============================================================
+/* 
    NAVBAR
-   ============================================================ */
+*/
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -144,9 +143,11 @@ strong { font-weight: 600; }
 .nav-burger.active span:nth-child(2) { opacity: 0; }
 .nav-burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ============================================================
+/*
    raph
-   ============================================================ */
+*/
+strong { color: var(--green); }
+
 .raph {
   min-height: 100vh;
   display: flex;
@@ -304,9 +305,9 @@ strong { font-weight: 600; }
   50%       { transform: translateX(-50%) translateY(8px); }
 }
 
-/* ============================================================
+/* 
    BOUTONS
-   ============================================================ */
+*/
 .btn-primary {
   display: inline-block;
   padding: .72rem 1.8rem;
@@ -340,9 +341,9 @@ strong { font-weight: 600; }
 }
 .btn-ghost:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
 
-/* ============================================================
+/*
    SECTIONS
-   ============================================================ */
+*/
 .section     { padding: 6rem 4rem; }
 .section-alt { background: rgba(7,19,10,.6); }
 
@@ -372,9 +373,9 @@ strong { font-weight: 600; }
   max-width: 600px;
 }
 
-/* ============================================================
+/* 
    TIMELINE
-   ============================================================ */
+*/
 .timeline {
   position: relative;
   padding-left: 2rem;
@@ -471,9 +472,9 @@ strong { font-weight: 600; }
   line-height: 1.75;
 }
 
-/* ============================================================
+/* 
    COMPÉTENCES — GRILLE 2×2 avec expansion pleine largeur
-   ============================================================ */
+*/
 .comp-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -482,19 +483,15 @@ strong { font-weight: 600; }
 
 /* Le bloc en entier : carte + panneau projets */
 .comp-block {
-  /* On le traite comme un item normal de la grille */
   opacity: 0;
   transform: translateY(14px);
   transition: opacity .5s ease, transform .5s ease;
-  /* Permet au panneau projets d'aller sous sur toute la largeur */
-  display: contents; /* on utilise display:contents pour que ses enfants soient dans la grille */
+  
+  display: contents; 
 }
 .comp-block.visible { opacity: 1; transform: translateY(0); }
 
-/*
-  Comme display:contents retire .comp-block de la grille,
-  on donne les styles d'animation aux enfants directs.
-*/
+
 .comp-block > .comp-card,
 .comp-block > .comp-projects {
   opacity: inherit;
@@ -516,16 +513,9 @@ strong { font-weight: 600; }
 .comp-card:hover { border-color: var(--border-light); }
 .comp-expanded > .comp-card { border-color: var(--green); box-shadow: 0 0 24px rgba(45,222,108,.12); }
 
-/* Quand expanded, la carte prend une colonne, les projets l'autre
-   Non — la demande : pleine largeur. On gère différemment avec une surcharge. */
 
-/*
-  Approche : .comp-block redevient un block normal (pas display:contents).
-  On le met en "grid-column: 1 / -1" quand expanded.
-  L'animation est sur le bloc.
-*/
 .comp-block {
-  display: block; /* reset display:contents → block simple */
+  display: block; 
   border-radius: var(--radius-lg);
 }
 .comp-block.comp-expanded {
@@ -621,9 +611,9 @@ strong { font-weight: 600; }
   min-height: 1.2em;
 }
 
-/* ============================================================
+/* 
    PROJETS — Grille 3×3
-   ============================================================ */
+*/
 .proj-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -705,9 +695,9 @@ strong { font-weight: 600; }
 .btn-show-more:hover { border-color: var(--green); color: var(--green); }
 .btn-arr { font-size: .75rem; }
 
-/* ============================================================
+/*
    COMPÉTENCES TECHNIQUES
-   ============================================================ */
+*/
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -760,9 +750,9 @@ strong { font-weight: 600; }
 }
 .tag:hover { background: rgba(45,222,108,.22); border-color: var(--green); color: var(--green); }
 
-/* ============================================================
+/*
    FOOTER / CONTACT
-   ============================================================ */
+*/
 .footer {
   background: rgba(3, 10, 5, 0.95);
   border-top: 1px solid var(--border);
@@ -866,9 +856,9 @@ strong { font-weight: 600; }
   padding-top: 1.75rem;
 }
 
-/* ============================================================
+/* 
    ANIMATIONS
-   ============================================================ */
+ */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -885,9 +875,9 @@ strong { font-weight: 600; }
 }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-/* ============================================================
+/* 
    RESPONSIVE
-   ============================================================ */
+ */
 @media (max-width: 1024px) {
   .navbar   { padding: 1rem 2rem; }
   .raph     { padding: 8rem 2rem 4rem; }

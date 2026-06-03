@@ -11,9 +11,9 @@
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════
+  <!--
        NAVBAR STICKY
-  ══════════════════════════════════════ -->
+  -->
   <nav class="navbar" id="navbar">
     <button class="nav-burger" id="nav-burger" aria-label="Menu" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -27,9 +27,9 @@
     </ul>
   </nav>
 
-  <!-- ══════════════════════════════════════
+  <!--
        raph / PRÉSENTATION
-  ══════════════════════════════════════ -->
+  -->
   <section class="raph" id="presentation">
     <div class="raph-inner">
 
@@ -43,14 +43,10 @@
           <a class="lien-but"
              href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf"
              target="_blank" rel="noopener">BUT Informatique</a>
-          à Lannion, je suis à la recherche d'un stage afin de mettre mes compétences
+          à Lannion, je suis à la <strong>recherche d'un stage</strong> afin de mettre mes compétences
           en pratique et de découvrir le monde professionnel du numérique.
           
         </p>
-        <div class="raph-actions">
-          <a href="#competences" class="btn-primary">Mes compétences</a>
-          <a href="#contact"     class="btn-ghost">Me contacter</a>
-        </div>
       </div>
 
       <div class="raph-photo-area">
@@ -64,9 +60,9 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!--
        FORMATION
-  ══════════════════════════════════════ -->
+  -->
   <section class="section" id="formation">
     <div class="container">
       <h2 class="section-title"><span class="title-num">01</span> Formation</h2>
@@ -90,8 +86,8 @@
             </p>
             <p class="tl-detail">
               
-              Formation en trois ans axée sur le développement logiciel, le développement d'applications,
-              les réseaux, les bases de données et la conduite de projets informatiques.
+              Formation en trois ans axée sur le <strong>développement </strong>logiciel, le développement d'applications,
+              les réseaux, les<strong> bases de données </strong>et la conduite de projets informatiques.
             </p>
           </div>
         </div>
@@ -105,8 +101,8 @@
             <p class="tl-school">Lycée de l'Iroise — Brest</p>
             <p class="tl-detail">
               Spécialités : <strong>Mathématiques</strong> &amp; <strong>Physique-Chimie</strong><br />
-              Option : Mathématiques expertes<br />
-              Spécialité abandonnée en terminale : Sciences Économiques et Sociales (SES)
+              Option : <strong>Mathématiques expertes</strong><br />
+              Spécialité abandonnée en terminale : <strong>Sciences Économiques et Sociales (SES)</strong>
             </p>
           </div>
         </div>
@@ -115,9 +111,9 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!--
        COMPÉTENCES BUT (6)
-  ══════════════════════════════════════ -->
+  -->
   <section class="section section-alt" id="competences">
     <div class="container">
       <h2 class="section-title"><span class="title-num">02</span> Compétences BUT Informatique</h2>
@@ -141,12 +137,8 @@
           <div class="comp-projects" id="cp-1">
             <div class="cp-list">
               <div class="cp-item" onclick="goToProject('projet-1')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/Sokoban.png" alt="Projet 1" /> </div>
                 <p class="cp-name">Sokoban</p>
-              </div>
-              <div class="cp-item" onclick="goToProject('projet-4')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
-                <p class="cp-name">Site Web</p>
               </div>
             </div>
           </div>
@@ -165,11 +157,11 @@
           <div class="comp-projects" id="cp-2">
             <div class="cp-list">
               <div class="cp-item" onclick="goToProject('projet-2')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/Cavalier.png" alt="Projet 2" /></div>
                 <p class="cp-name">Problème du cavalier</p>
               </div>
               <div class="cp-item" onclick="goToProject('projet-3')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/picross-plein.png" alt="Projet 3" /></div>
                 <p class="cp-name">Picross</p>
               </div>
             </div>
@@ -189,7 +181,7 @@
           <div class="comp-projects" id="cp-3">
             <div class="cp-list">
               <div class="cp-item" onclick="goToProject('projet-6')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/auto-conversion.png" alt="Projet 6" /></div>
                 <p class="cp-name">Installation d'un poste de développement</p>
               </div>
             </div>
@@ -209,7 +201,7 @@
           <div class="comp-projects" id="cp-4">
             <div class="cp-list">
               <div class="cp-item" onclick="goToProject('projet-7')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/Base-de-donne.png" alt="Projet 7" /></div>
                 <p class="cp-name">Base de Données Parcoursup 2022</p>
               </div>
             </div>
@@ -228,8 +220,12 @@
           </div>
           <div class="comp-projects" id="cp-5">
             <div class="cp-list">
+              <div class="cp-item" onclick="goToProject('projet-4')">
+                <div class="cp-img"><img src="images/site-web.png" alt="Projet 4" /></div>
+                <p class="cp-name">Site Web</p>
+              </div>
               <div class="cp-item" onclick="goToProject('projet-5')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/gestion-de-projet.png" alt="Projet 5" /></div>
                 <p class="cp-name">Gestion de Projet (boulangerie)</p>
               </div>
             </div>
@@ -249,11 +245,11 @@
           <div class="comp-projects" id="cp-6">
             <div class="cp-list">
               <div class="cp-item" onclick="goToProject('projet-4')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/site-web.png" alt="Projet 4" /></div>
                 <p class="cp-name">Site Web</p>
               </div>
               <div class="cp-item" onclick="goToProject('projet-5')">
-                <div class="cp-img"><span class="cp-img-placeholder">📁</span></div>
+                <div class="cp-img"><img src="images/gestion-de-projet.png" alt="Projet 5" /></div>
                 <p class="cp-name">Gestion de Projet (boulangerie)</p>
               </div>
             </div>
@@ -264,9 +260,9 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!--
        TOUS MES PROJETS
-  ══════════════════════════════════════ -->
+  -->
   <section class="section" id="projets">
     <div class="container">
       <h2 class="section-title"><span class="title-num">03</span> Mes projets</h2>
@@ -307,7 +303,7 @@
           </div>
         </article>
 
-        <!-- Projets 4-8 masqués -->
+        <!-- Projets 4-7 masqués -->
         <article class="proj-card proj-hidden fade-in" id="projet-4">
           <div class="proj-img">
             <img src="images/site-web.png" alt="Projet 4" />
@@ -363,9 +359,9 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!--
        COMPÉTENCES TECHNIQUES
-  ══════════════════════════════════════ -->
+  -->
   <section class="section section-alt" id="skills">
     <div class="container">
       <h2 class="section-title"><span class="title-num">04</span> Compétences techniques</h2>
@@ -426,9 +422,9 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!--
        FOOTER / CONTACT
-  ══════════════════════════════════════ -->
+   -->
   <footer class="footer" id="contact">
     <div class="container">
       <h2 class="footer-title">Contact</h2>
@@ -475,9 +471,9 @@
     </div>
   </footer>
 
-  <!-- ══════════════════════════════════════
+  <!-- 
        JAVASCRIPT
-  ══════════════════════════════════════ -->
+  -->
   <script>
     /* ── Navbar scroll ── */
     const navbar = document.getElementById('navbar');
